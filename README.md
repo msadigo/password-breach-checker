@@ -60,3 +60,24 @@ pytest tests/test_checker.py::test_check_password_found
 
 Tests mock `requests.get` directly, so they run offline and never hit the
 real HIBP API.
+
+## Why I Built This
+
+I previously worked as a Digitalization Support Specialist at the ECOWAS
+Peace Fund (PAPS Directorate), where I was part of a team that digitized
+over 20,000 institutional records across two deployments with zero
+security breaches. That work made it clear that a lot of the risk to
+records-handling systems doesn't come from exotic attacks — it comes from
+basic credential hygiene. Weak or previously breached passwords are one of
+the most common ways these systems get compromised, and checking for them
+is a simple, well-understood control.
+
+This tool also connects to my MSc research on cybersecurity framework
+adoption and the security of digitized institutional records. Frameworks
+routinely mandate "strong password policies," but that language says
+nothing about whether the policy is actually enforced through tooling
+day to day. This project is a small, concrete example of that gap: a
+policy statement is not the same as a check that actually runs. It's a
+modest tool, not a solution to institutional security on its own, but it's
+a useful illustration of the difference between mandating a control and
+operationalizing it.
