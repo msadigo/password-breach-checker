@@ -1,5 +1,7 @@
 # password-breach-checker
 
+[![Tests](https://github.com/msadigo/password-breach-checker/actions/workflows/tests.yml/badge.svg)](https://github.com/msadigo/password-breach-checker/actions/workflows/tests.yml)
+
 A command-line tool that checks whether a password has appeared in known
 data breaches, using the [Have I Been Pwned Pwned Passwords
 API](https://haveibeenpwned.com/API/v3#PwnedPasswords).
