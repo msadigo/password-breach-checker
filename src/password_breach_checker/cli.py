@@ -1,3 +1,5 @@
+"""Command-line entry point for password-breach-checker."""
+
 import argparse
 import getpass
 import sys
@@ -6,6 +8,11 @@ from .checker import PwnedApiError, check_password
 
 
 def main(argv=None) -> int:
+    """Parse arguments, check the password, and print the result.
+
+    Returns a process exit code: 0 on success (checked, breached or not),
+    1 if the API request failed.
+    """
     parser = argparse.ArgumentParser(
         prog="password-breach-checker",
         description="Check whether a password has appeared in known data breaches.",
